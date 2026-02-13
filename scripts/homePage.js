@@ -99,7 +99,7 @@ if (horizontalCarousel) {
 
     const allButtons = horizontalCarousel.querySelectorAll("#playPauseButton");
     allButtons.forEach((btn) => {
-      btn.src = "../images/play-white.png";
+      btn.src = "./images/play-white.png";
     });
 
     const allWaves = horizontalCarousel.querySelectorAll("#wave");
@@ -126,17 +126,17 @@ if (horizontalCarousel) {
         const allButtons =
           horizontalCarousel.querySelectorAll("#playPauseButton");
         allButtons.forEach((btn) => {
-          btn.src = "../images/play-white.png";
+          btn.src = "./images/play-white.png";
         });
 
         audio.play();
-        button.src = "../images/pause-white.png";
+        button.src = "./images/pause-white.png";
 
         wave.style.display = "flex";
         wave.classList.add("active");
       } else {
         audio.pause();
-        button.src = "../images/play-white.png";
+        button.src = "./images/play-white.png";
 
         wave.classList.remove("active");
       }
@@ -146,36 +146,36 @@ if (horizontalCarousel) {
 
 const data = [
   {
-    image: "../images/homepageBgimage1.jpg",
+    image: "./images/homepageBgimage1.jpg",
     podccastDescription: " my description ",
-    audio: "../audios/audio",
+    audio: "./audios/audio",
     podcastName: "mypodcast",
     ituneLink: "",
     spotifyLink: "",
     ytLink: "",
   },
   {
-    image: "../images/homepageBgimage2.jpg",
+    image: "./images/homepageBgimage2.jpg",
     podccastDescription: " my description ",
-    audio: "../audios/audio",
+    audio: "./audios/audio",
     podcastName: "mypodcast",
     ituneLink: "",
     spotifyLink: "",
     ytLink: "",
   },
   {
-    image: "../images/homepageBgimage3.jpg",
+    image: "./images/homepageBgimage3.jpg",
     podccastDescription: " my description ",
-    audio: "../audios/audio",
+    audio: "./audios/audio",
     podcastName: "mypodcast",
     ituneLink: "",
     spotifyLink: "",
     ytLink: "",
   },
   {
-    image: "../images/homepageBgimage4.jpg",
+    image: "./images/homepageBgimage4.jpg",
     podccastDescription: " my description ",
-    audio: "../audios/audio",
+    audio: "./audios/audio",
     podcastName: "mypodcast",
     ituneLink: "",
     spotifyLink: "",
@@ -193,7 +193,7 @@ carouselInner.innerHTML = data
     <div class="row g-0 p-3 bg-white h-50">
     <div class="video-wrapper position-relative">
         <video id="myVideo" controls="true">
-          <source src="../videos/rupaybachaoVid.mp4" type="video/mp4">
+          <source src="./videos/rupaybachaoVid.mp4" type="video/mp4">
           </video>
         </div>
     </div>
@@ -292,7 +292,7 @@ verticalCarouselInner.innerHTML = data
             <div class="col-6 center-elements bg-black">
                 <div class="video-wrapper position-relative">
                     <video id="myVideo" controls="true">
-                        <source src="../videos/rupaybachaoVid.mp4" type="video/mp4">
+                        <source src="./videos/rupaybachaoVid.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -308,10 +308,10 @@ function playVideo() {
   var pausePlayButton = document.getElementById("playPauseButton");
   if (video.paused) {
     video.play();
-    playPauseButton.src = "../images/pause-white.png";
+    playPauseButton.src = "./images/pause-white.png";
   } else {
     video.pause();
-    playPauseButton.src = "../images/play-white.png";
+    playPauseButton.src = "./images/play-white.png";
   }
 }
 
