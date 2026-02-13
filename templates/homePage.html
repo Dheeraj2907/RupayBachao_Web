@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/homePage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid m-0 p-0 h-100">
+        <!-- NAVBAR DIV------------------------------------------------- -->
+        <div class="mckNavbar d-flex justify-content-between px-3 w-100">
+            <!-- FIRST PART OF NAVBAR CONTAINING THE MENU AND LOGO  -->
+            <div class="center-elements ">
+                <button class="btn h-100 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas"
+                    aria-controls="menuOffcanvas">
+                    <img class="h-30px" src="../images/menu.png" alt="white-menu">
+                </button>
+                <!-- OFF CANVAS OF THE MENU BAR ------------------------------------------------------ -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="menuOffcanvas"
+                    aria-labelledby="menuOffcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="menuOffcanvasLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text,
+                            images,
+                            lists, etc.
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="../images/rupayBachaoLogo.png" alt="Logo" class="h-75">
+            </div>
+            <div class="d-flex align-items-center pt-4 justify-content-between h-100 w-60 d-xl-flex d-none">
+                <div class="center-elements h-100 navDropdownDiv" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasOfIndustries" aria-controls="offcanvasOfIndustries" id="industriesHover">
+                    <p class="m-0 navDropdownText">Industries</p>
+                    <svg class="dropdownArrow" width="25px" height="25px" viewBox="0 0 24 24" id="arrow_down"
+                        data-name="arrow down" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Mask" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="1" />
+                            </clipPath>
+                        </defs>
+                        <g id="_20x20_arrow-back--grey" data-name="20x20/arrow-back--grey"
+                            transform="translate(0 24) rotate(-90)">
+                            <rect id="Mask-2" data-name="Mask" width="24" height="24" fill="none" />
+                            <g id="_20x20_arrow-back--grey-2" data-name="20x20/arrow-back--grey"
+                                clip-path="url(#clip-path)">
+                                <g id="Group_2" data-name="Group 2" transform="translate(8 7)">
+                                    <path id="Rectangle" d="M0,6.586V0H6.586"
+                                        transform="translate(0.686 5.157) rotate(-45)" fill="none" stroke="currentColor"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="offcanvas offcanvas-top" data-bs-backdrop="false" data-bs-scroll="true"
+                        style="margin-top: 86px;" tabindex="-1" id="offcanvasOfIndustries"
+                        aria-labelledby="industriesOffcanvas">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="industriesOffcanvas">Offcanvas top</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="center-elements h-100 navDropdownDiv" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasOfCapabilities" aria-controls="offcanvasOfCapabilities"
+                    id="capabilitiesHover">
+                    <p class="m-0 navDropdownText">Capabilities</p>
+                    <svg class="dropdownArrow" width="25px" height="25px" viewBox="0 0 24 24" id="arrow_down"
+                        data-name="arrow down" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Mask" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="1" />
+                            </clipPath>
+                        </defs>
+                        <g id="_20x20_arrow-back--grey" data-name="20x20/arrow-back--grey"
+                            transform="translate(0 24) rotate(-90)">
+                            <rect id="Mask-2" data-name="Mask" width="24" height="24" fill="none" />
+                            <g id="_20x20_arrow-back--grey-2" data-name="20x20/arrow-back--grey"
+                                clip-path="url(#clip-path)">
+                                <g id="Group_2" data-name="Group 2" transform="translate(8 7)">
+                                    <path id="Rectangle" d="M0,6.586V0H6.586"
+                                        transform="translate(0.686 5.157) rotate(-45)" fill="none" stroke="currentColor"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="offcanvas offcanvas-top" data-bs-backdrop="false" data-bs-scroll="true"
+                        style="margin-top: 86px;" tabindex="-1" id="offcanvasOfCapabilities"
+                        aria-labelledby="capabilitiesOffcanvas">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="capabilitiesOffcanvas">Offcanvas top</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="center-elements h-100 navDropdownDiv">
+                    <p class="m-0 navDropdownText">Tech & AI</p>
+                </div>
+                <div class="center-elements h-100 navDropdownDiv">
+                    <p class="m-0 navDropdownText">Our Insights</p>
+                    <svg class="dropdownArrow" width="25px" height="25px" viewBox="0 0 24 24" id="arrow_down"
+                        data-name="arrow down" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Mask" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="1" />
+                            </clipPath>
+                        </defs>
+                        <g id="_20x20_arrow-back--grey" data-name="20x20/arrow-back--grey"
+                            transform="translate(0 24) rotate(-90)">
+                            <rect id="Mask-2" data-name="Mask" width="24" height="24" fill="none" />
+                            <g id="_20x20_arrow-back--grey-2" data-name="20x20/arrow-back--grey"
+                                clip-path="url(#clip-path)">
+                                <g id="Group_2" data-name="Group 2" transform="translate(8 7)">
+                                    <path id="Rectangle" d="M0,6.586V0H6.586"
+                                        transform="translate(0.686 5.157) rotate(-45)" fill="none" stroke="currentColor"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="center-elements h-100 navDropdownDiv">
+                    <p class="m-0 navDropdownText">Careers</p>
+                    <svg class="dropdownArrow" width="25px" height="25px" viewBox="0 0 24 24" id="arrow_down"
+                        data-name="arrow down" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Mask" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="1" />
+                            </clipPath>
+                        </defs>
+                        <g id="_20x20_arrow-back--grey" data-name="20x20/arrow-back--grey"
+                            transform="translate(0 24) rotate(-90)">
+                            <rect id="Mask-2" data-name="Mask" width="24" height="24" fill="none" />
+                            <g id="_20x20_arrow-back--grey-2" data-name="20x20/arrow-back--grey"
+                                clip-path="url(#clip-path)">
+                                <g id="Group_2" data-name="Group 2" transform="translate(8 7)">
+                                    <path id="Rectangle" d="M0,6.586V0H6.586"
+                                        transform="translate(0.686 5.157) rotate(-45)" fill="none" stroke="currentColor"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="center-elements h-100 navDropdownDiv">
+                    <p class="m-0 navDropdownText">About Us</p>
+                    <svg class="dropdownArrow" width="25px" height="25px" viewBox="0 0 24 24" id="arrow_down"
+                        data-name="arrow down" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Mask" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="1" />
+                            </clipPath>
+                        </defs>
+                        <g id="_20x20_arrow-back--grey" data-name="20x20/arrow-back--grey"
+                            transform="translate(0 24) rotate(-90)">
+                            <rect id="Mask-2" data-name="Mask" width="24" height="24" fill="none" />
+                            <g id="_20x20_arrow-back--grey-2" data-name="20x20/arrow-back--grey"
+                                clip-path="url(#clip-path)">
+                                <g id="Group_2" data-name="Group 2" transform="translate(8 7)">
+                                    <path id="Rectangle" d="M0,6.586V0H6.586"
+                                        transform="translate(0.686 5.157) rotate(-45)" fill="none" stroke="currentColor"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="center-elements h-100 navDropdownDiv">
+                    <p class="m-0 navDropdownText">McKinsey Blogs</p>
+                </div>
+            </div>
+            <!-- THIRD PART OF THE NAVBAR CONTAINING SUBSCRIBE LINK AND SEARCH BUTTON  -->
+            <div class="h-100 d-flex flex-column justify-content-center">
+                <div class="row g-0 p-0 m-0 btn-cursor center-elements me-2 d-md-flex d-none">
+                    Sign in | Subscribe
+                </div>
+                <div
+                    class="row g-0 p-0 m-0 align-items-center btn-cursor d-flex align-items-center justify-content-end me-2">
+                    <img class="h-30px w-auto" src="../images/search.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- HOME PAGE NEXT TO NAVBAR  ------------------------------------------>
+        <div class="h-100 w-100">
+            <div class="container-fluid g-0 h-100 w-100">
+                <div class="row d-flex justify-content-center g-0 mb-5">
+                    <div class="col-lg-6 col-md-10 col-sm-12 h-100 mt-5">
+                        <div class="my-5 px-4">
+                            <div
+                                class="d-flex flex-column col-lg-9 col-md-9 col-sm-12 fade-up justify-content-center align-items-start">
+                                <p class="p-0 m-0 serif text-start fs-40 w-100">What's your next
+                                </p>
+                                <p class="p-0 m-0 ps-5 serif text-end fs-40 w-100">brilliant move?
+                                </p>
+                            </div>
+                            <div class="fade-up d-flex col-lg-10 col-md-10 col-sm-12">
+                                <p class="p-0">Game-changing work. People-powered growth. At
+                                    McKinsey, we help
+                                    you
+                                    think bigger, build
+                                    stronger, and expand opportunity for all.</p>
+                                <div class="enter-elements h-85px d-flex align-items-end">
+                                    <div class="arrowDiv btn-cursor center-elements">
+                                        <img class="h-50" src="../images/whiteNext.png" alt="nextIcon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FOUR IMAGES OF THE HOME FRONT PAGE HIDDEN ON SMALL SCREEN --------------------------------------------------------------->
+                        <div class="row g-3 p-0 m-0 d-none d-sm-block">
+                            <div class="row p-0 m-0 g-3 align-items-center">
+                                <div class="col-lg-6 col-md-6 col-sm-12 h-500px">
+                                    <div class="divAnimation btn-cursor  fade-up">
+                                        <div class="backgroundImageAnimation"
+                                            style="background-image: url(../images/homepageBgimage1.jpg);">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 h-450px">
+                                    <div class="divAnimation btn-cursor  fade-up">
+                                        <div class="backgroundImageAnimation"
+                                            style="background-image: url(../images/homepageBgimage2.jpg);">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0 g-3 align-items-center">
+                                <div class="col-lg-6 col-md-6 col-sm-12 h-450px">
+                                    <div class="divAnimation btn-cursor  fade-up">
+                                        <div class="backgroundImageAnimation"
+                                            style="background-image: url(../images/homepageBgimage4.jpg);">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 h-500px">
+                                    <div class="divAnimation btn-cursor  fade-up">
+                                        <div class="backgroundImageAnimation"
+                                            style="background-image: url(../images/homepageBgimage5.jpg);">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CAROUSEL OF THE 5 IMAGES THAT VISIBLE ONLY ON SMALL SCREEN ---------------------------------------------------------- -->
+                        <div id="carouselExampleIndicators" class="carousel slide h-500px d-sm-flex d-md-none">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner p-3 h-100">
+                                <div class="h-100 carousel-item active">
+                                    <img class="h-100 w-100 background-image" src="../images/homepageBgimage1.jpg"
+                                        alt="">
+                                </div>
+                                <div class="h-100 carousel-item">
+                                    <img class="h-100 h-100 w-100" src="../images/homepageBgimage2.jpg" alt="">
+                                </div>
+                                <div class="h-100 carousel-item">
+                                    <img class="h-100 h-100 w-100" src="../images/homepageBgimage3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-10 mt-5 h-auto py-2">
+                        <div class="h-730px d-none d-sm-block">
+                            <div class="divAnimation btn-cursor  fade-up">
+                                <div class="position-relative backgroundImageAnimation"
+                                    style="background-image: url(../images/homepageBgimage3.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inquiryDiv bg-grey fade-up mt-3 p-5">
+                            <p class="fs-4 lh-1 text-center">Subscribe to the latest McKinsey Insights on the topics you
+                                care about.</p>
+                            <div class="row g-0 h-45px blackBorderHover my-3" tabindex="0">
+                                <div class="col-10">
+                                    <input class="h-100 w-100 px-3 border-0" type="text" placeholder="Email address">
+                                </div>
+                                <div class="col-2 h-100 bg-primary center-elements">
+                                    <img class="h-50" src="../images/whiteNext.png" alt=" next">
+                                </div>
+                            </div>
+                            <div class="row g-0 p-0 m-0 align-items-center py-1">
+                                <div class="col-4 bg-black h-2px"></div>
+                                <p class="col-4 text-center fs-13px">Or continue with</p>
+                                <div class="col-4 bg-black h-2px "></div>
+                            </div>
+                            <div class="row g-2">
+                                <div class="col-lg-4 col-md-4 col-sm-12 h-45px d-flex align-items-end btn-cursor">
+                                    <div class="center-elements socialMediaDiv">
+                                        <img class="h-20px socialMediaSVG mx-1" src="../images/apple.svg" alt="apple">
+                                        <p class="fw-semibold text-black-white socialMediaSVG fs-13px">Apple</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 h-45px d-flex align-items-end btn-cursor">
+                                    <div class="center-elements socialMediaDiv">
+                                        <img class="h-20px socialMediaSVG mx-1" src="../images/google.svg" alt="apple">
+                                        <p class="fw-semibold text-black-white socialMediaSVG fs-13px">Google</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 h-45px d-flex align-items-end btn-cursor">
+                                    <div class="center-elements socialMediaDiv">
+                                        <img class="h-20px socialMediaSVG mx-1" src="../images/linkedIn.svg"
+                                            alt="apple">
+                                        <p class="fw-semibold text-black-white socialMediaSVG fs-13px">Linkedin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orangeGradient-bg py-5 mt-5 px-3">
+                    <div class="row g-0 p-0 px-5">
+                        <div class="col-lg-7 col-md-10 col-sm-12 text-white">
+                            <h1 class="serif fw-semibold">The McKinsey Podcast</h1>
+                            <p class="mb-0 my-3">A shortcut to clarity in a noisy world, The McKinsey Podcast dives into
+                                the
+                                ideas, issues, and
+                                innovations reshaping business, the economy, and society. Tune in to hear from McKinsey
+                                experts
+                                and thought leaders about the latest in AI breakthroughs, leadership, and more.</p>
+                            <button class="w-200px btn rounded-0 h-45px bg-white my-5">
+                                Litsen here
+                                <img class="h-20px mx-2" src="../images/next.png" alt="next">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- VERTICAL MUSIC DIV CAROUSEL HIDDEN ONLY ON SMALL SCREEN---------------------------------- -->
+                    <div id="audioVerticalCarousel" class="carousel slide h-550px  justify-content-center d-none d-sm-none d-lg-flex">
+                        <div class="carousel-inner h-100" id="audioVerticalCarouselInner">
+
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#audioVerticalCarousel" data-bs-slide-to="0"
+                                class="carouselSlideBar active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#audioVerticalCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2" class="carouselSlideBar"></button>
+                            <button type="button" data-bs-target="#audioVerticalCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3" class="carouselSlideBar"></button>
+                            <button type="button" data-bs-target="#audioVerticalCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4" class="carouselSlideBar"></button>
+                        </div>
+                    </div>
+
+                    <!-- HORIZONTAL MUSIC DIV CAROUSEL VISIBLE ONLY ON SMALL SCREEN---------------------------------- -->
+                    <div class="row g-0 p-0 m-0 h-550px mx-2 d-sm-flex d-md-none">
+                        <div id="audioCarousel" class="carousel slide h-500px ">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#audioCarousel" data-bs-slide-to="0"
+                                    class="active bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#audioCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2" class="bg-secondary"></button>
+                                <button type="button" data-bs-target="#audioCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3" class="bg-secondary"></button>
+                                <button type="button" data-bs-target="#audioCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4" class="bg-secondary"></button>
+                                <button type="button" data-bs-target="#audioCarousel" data-bs-slide-to="4"
+                                    aria-label="Slide 5" class="bg-secondary"></button>
+                            </div>
+                            <div class="carousel-inner h-100" id="audioCarouselInner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../scripts/homePage.js"></script>
+
+</html>
