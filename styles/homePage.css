@@ -1,7 +1,5 @@
 body {
     background: linear-gradient(135deg, #0f7c3ba9, #9b7a1e81, #fc6b0378);
-    /* background-color: white !important; */
-    /* height: 600px; */
 }
 
 p {
@@ -116,24 +114,29 @@ p {
     background: #0f7c3b;
     margin-bottom: 10px !important;
 }
-.imageFit{
+
+.imageFit {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .h-85px {
     height: 85px;
 }
-.musicApps{
+
+.musicApps {
     height: 35px;
     width: 35px !important;
     background-color: black;
     border-radius: 35px;
 }
-.musicApps:hover{
+
+.musicApps:hover {
     background-color: rgb(0, 110, 255);
     margin-bottom: 2px !important;
     box-shadow: 1px 0px 6px grey;
 }
+
 .h-450px {
     height: 450px;
 }
@@ -240,22 +243,64 @@ p {
     background: linear-gradient(45deg, #5f3702, #824c00, #f7a444);
 }
 
-.carouselSlideBar {
-    width: 40% !important;
-    height: 10px !important;
-    border-radius: 50px;
-    border: none;
-    background-color: #eae8e8 !important;
-    transition: all 0.3s ease;
+.custom-indicators {
+    position: absolute;
+    margin-bottom: -50px !important;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
 }
 
-.carouselSlideBar.active {
-    background-color: #5b9cf1 !important;
-    width: 80px;
+.custom-indicators button {
+    background: none;
+    border: none;
+    text-indent: 0 !important;
+    opacity: 1;
+    width: 200px !important;
+    text-align: left;
+    padding: 0;
 }
-/* .w-90{
-    width: 90% !important;
-} */
+
+.indicator-line {
+    height: 7px;
+    /* width: 100px; */
+    background-color: #ffffff !important;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    opacity: 1 !important;
+    transition: background-color 0.3s ease;
+}
+
+.indicator-text {
+    color: white !important;
+    font-size: 13px;
+}
+
+.custom-indicators .active .indicator-line {
+    background-color: #f7a444 !important;
+}
+
+.carousel-indicators button {
+    opacity: 1 !important;
+}
+
+.opportunityCard {
+    background: transparent;
+    transition: background-color 0.5s ease;
+}
+
+.opportunityCard:hover {
+    background-color: white;
+}
+
+.text-white-black {
+    color: white !important;
+}
+
+.opportunityCard:hover .text-white-black {
+    color: black !important;
+}
+
 .h-300px {
     height: 300px;
 }
@@ -292,6 +337,7 @@ p {
     font-size: 13px;
 }
 
+
 .blackBorderHover {
     border: 1px solid black;
 }
@@ -302,6 +348,23 @@ p {
 
 .blackBorderHover:focus-within {
     border: 2px solid rgb(26, 113, 213) !important;
+}
+
+.video-wrapper {
+    /* width: 100%; */
+    /* height: 500px; */
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* fills parent properly */
+}
+
+.video-controls {
+    z-index: 10;
 }
 
 .audio-player {
