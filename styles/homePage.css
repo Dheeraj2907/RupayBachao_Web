@@ -1,5 +1,7 @@
 body {
     background: linear-gradient(135deg, #0f7c3ba9, #9b7a1e81, #fc6b0378);
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 p {
@@ -33,10 +35,26 @@ p {
     width: 60% !important;
 }
 
+.h-200px {
+    height: 200px;
+}
+
 .h-15px {
     height: 15px;
 }
 
+.linkOnHover {
+    color: black;
+    text-decoration: none;
+}
+
+.linkOnHover:hover {
+    color: rgb(34, 91, 248);
+}
+.boldHr{
+    height: 1px !important;
+    background-color: black;
+}
 .navDropdownText {
     font-size: 14.5px;
     font-weight: 350;
@@ -53,10 +71,24 @@ p {
     box-shadow: 0 3px 0 0 #ef711d;
 }
 
-.navDropdownDiv:hover .dropdownArrow {
+#collapseLinkDiv:active .transforArrow {
     transform: rotateX(180deg);
 }
 
+.navDropdownDiv:hover .dropdownArrow {
+    transform: rotateX(180deg);
+}
+.linkTextDecorationOnHover:hover{
+    color: rgb(34, 91, 248);
+    text-decoration: underline !important;
+}
+.linkTextDecorationOnHover{
+    text-decoration: none !important;
+    color: black;
+}
+.h-100px{
+    height: 100px;
+}
 @keyframes slideLeftToRight {
     from {
         transform: translateX(-100%);
@@ -242,7 +274,12 @@ p {
 .orangeGradient-bg {
     background: linear-gradient(45deg, #5f3702, #824c00, #f7a444);
 }
-
+.darkOrangeBG{
+    background-color: #4b2b01;
+}
+.darkGreenBG{
+    background-color: #408741  ;
+}
 .custom-indicators {
     position: absolute;
     margin-bottom: -50px !important;
@@ -469,7 +506,12 @@ input:focus {
 .w-200px {
     width: 200px !important;
 }
-
+.w-80{
+    width: 80% !important;
+}
+.h-300px{
+    height: 300px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .inquiryDiv {
